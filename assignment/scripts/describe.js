@@ -1,5 +1,5 @@
 // WHAT IS THIS EVEN DOING?
-
+// The double forward slashes indicate that a note has been made within the code.
 // For questions 1-3, each code block is syntactically and logically correct. Your job is to describe what is happening. 
 // They are in isolation -- variables in one question do not affect other questions.
 // Describe the code as it would be run, and make sure you give us the console.log's value at the end.
@@ -25,14 +25,13 @@ if (number >= 2) {
 */
 
 
-// 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-//
-//
-//
-//
-//
+// 1. Using a string comparison operator we see if a name is 'Dane' we get 'Hi, Mary' otherwise 'How do you do?'
+// First we make a variable and set it to 'name' and set it to the string 'Dane'.
+// We then condition that if the string 'Mary' is equal in value AND type, we console log 'Hi, Mary!'
+// If the condition of 'Mary' is NOT equal in value AND type, we then instruct the console to log 'How do you do?'
+// The operation will run and verify that 'Dane' is not of the same value and type,
+// Therefore it will move to the ELSE console log which will read:
+// - How do you do?
 
 //CODE
 /*
@@ -47,11 +46,15 @@ if (name === 'Mary') {
 
 */
 
-// 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// 2. We are assigning variables, then comparing value and type, when conditions are met, console logs 'super'
+// The variable 'secret' is being declared first but not assigned.
+// The variable 'code' is being declared and assigned the number value 123.
+// If the condition that the variable 'code' is of the same value and type as number '123',
+// Then assign the variable 'secret' to 'super' and variable 'code' to (123 * 2)
+// However if the condition of 'code' being the same type and value to '123' is not met,
+// The code will then run to see if the variable 'code' is larger than the number 250, if so,
+// The variable secret will then be assigned the string 'duper'
+// The consol log will read: super
 
 //CODE
 /*
@@ -72,11 +75,10 @@ console.log(secret)
 
 */
 
-// 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// 3. variables are initially being assigned values with 'let', conditions are run one at a time, if the first is met it will console log `You're a student on the West Coast!` otherwise 
+// it will move on to the next condition with 'else if' comparing 'true' and 'false' or 34 < 30, which triggers it to the next 'else if'
+// comparing what is now true = true, meaning the console will log 'Welcome to Prime!'
+// There is a final else, if the previous conditions could not be met, it would console log 'How about the weather?'
 
 //CODE
 /*
@@ -126,7 +128,8 @@ if (number >= 2) {
 
 */
 
-
+// Variables declared with 'let' cannot be redeclared.
+// use var instead of let for the first two declarations. 
 
 //4. We start with three variables -- colorOne is set to 'blue' and 
 // colorTwo is set to 'red', and mix is set to true. We check if mix is true 
@@ -142,11 +145,14 @@ if (mix === true) {
 }
 */
 
+
+
 //5. We start with two variables -- temp is set to 40 and time is set to 4.
 // We check if temp is higher than 39 and if time is greater or equal to  4 
 // -- they are so we console.log 'throw away the food!'
 
-/*
+/*/// when declaring the cariable of time, 'let' should be used instead of 'const' as these cannot be reassigned. 
+
 let temp = 40;
 const time = 4;
 
@@ -158,7 +164,7 @@ if (temp > 39 || time >= 4) {
 //6. We start with two variables -- age is set to 21 and minAge is set to 21.
 // We check if age is greater than or equal to minAge 
 // -- it is, so we console.log 'enter'.
-
+//* minAge is a constant and cannot be redeclared. variables age and minAge should be switched aroundb so that if 'age' is less than or equal to 21 or minAge. 
 /*
 let age = 21;
 const minAge = 21;
