@@ -79,7 +79,7 @@ console.log(secret)
 // it will move on to the next condition with 'else if' comparing 'true' and 'false' or 34 < 30, which triggers it to the next 'else if'
 // comparing what is now true = true, meaning the console will log 'Welcome to Prime!'
 // There is a final else, if the previous conditions could not be met, it would console log 'How about the weather?'
-
+// The console will log 'Welcome to Prime!' 
 //CODE
 /*
 let isStudent = true;
@@ -136,12 +136,16 @@ if (number >= 2) {
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 /*
-let colorOne = 'red';
-let colorTwo = 'blue';
+let colorOne = 'blue';
+let colorTwo = 'red';
 let mix = true;
 
 if (mix === true) {
   colorOne = 'purple';
+  colorTwo = 'purple';
+
+  consol.log(colorOne);
+  consol.log(colorTwo);
 }
 */
 
@@ -154,9 +158,9 @@ if (mix === true) {
 /*/// when declaring the cariable of time, 'let' should be used instead of 'const' as these cannot be reassigned. 
 
 let temp = 40;
-const time = 4;
+let time = 4;
 
-if (temp > 39 || time >= 4) {
+if (temp > 39 && time >= 4) {
   console.log('throw away the food!');
 }
 */
@@ -166,10 +170,11 @@ if (temp > 39 || time >= 4) {
 // -- it is, so we console.log 'enter'.
 //* minAge is a constant and cannot be redeclared. variables age and minAge should be switched aroundb so that if 'age' is less than or equal to 21 or minAge. 
 /*
+
 let age = 21;
 const minAge = 21;
 
-if(minAge <= age) {
+if(age <= minAge) {
   console.log('no entry');
 } else {
   console.log('enter');
